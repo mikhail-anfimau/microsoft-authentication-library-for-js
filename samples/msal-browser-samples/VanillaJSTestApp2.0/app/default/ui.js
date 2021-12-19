@@ -66,5 +66,8 @@ function updateUI(data, endpoint) {
                 }
             });
         }
+    } else {
+        const customResponse = document.getElementById("customResponse");
+        customResponse.innerHTML = JSON.stringify(data);
     }
 }
